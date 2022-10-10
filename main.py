@@ -19,10 +19,10 @@ while True:
     elif user_in == 2:
         date = input('Enter date (YYYYMMDD): ')
         time = input('Enter time (hhmmss): ')
-        temp = input('Enter temperature: ')
-        hum = input('Enter humidity: ')
-        rain = input('Enter rainfall: ')
-        w_data = {date+time:{'t':temp, 'h':hum, 'r':rain}}
+        temp = int(input('Enter temperature: '))
+        hum = int(input('Enter humidity: '))
+        rain = float(input('Enter rainfall: '))
+        w_data[date+time] = {'t':temp, 'h':hum, 'r':rain}
         weather.write_data(data=w_data, filename='w.dat')
         print('\n')
     elif user_in == 3:
