@@ -35,4 +35,4 @@ while True:
     elif user_in == 5:
         quit()
     else:
-        user_in = input('Invalid choice. Re-enter menu choice: ')
+        print('Invalid choice. Re-enter menu choice.\n')
