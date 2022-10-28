@@ -1,9 +1,12 @@
+# Lab 4
+# Author: Brennon Hahs
+
 import json
 import calendar
 
 def read_data(filename):
     try:
-        with open (filename, 'r') as f:
+        with open(filename, 'r') as f:
             return json.load(f)
     except:
         return {}
@@ -91,7 +94,3 @@ def report_historical(data):
     
     return display
         
-
-
-
-

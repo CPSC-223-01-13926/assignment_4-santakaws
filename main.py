@@ -1,3 +1,6 @@
+# Lab 4
+# Author: Brennon Hahs
+
 import weather
 
 w_data = {}
